@@ -1,4 +1,8 @@
+#[cfg(unix)]
 use ncurses::*;
+#[cfg(windows)]
+use pdcurses::*;
+
 use std::cmp;
 use std::env;
 use std::fs::File;

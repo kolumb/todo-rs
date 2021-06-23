@@ -26,6 +26,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "pdcurses"
+version = "0.0.0"
+source = "git+https://github.com/et342/pdcurses-rs#0d519ce54a75415af801ecdd012794a71e8dd7ab"
+dependencies = [
+ "cc",
+ "libc",
+]
+
+[[package]]
 name = "pkg-config"
 version = "0.3.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -36,4 +45,5 @@ name = "todo-rs"
 version = "0.1.0"
 dependencies = [
  "ncurses",
+ "pdcurses",
 ]
